@@ -1,0 +1,134 @@
+:root {
+	--text-placeholder-color:rgb(167, 167, 167);
+	--not-ready-message-color:rgb(64, 62, 49);
+	--ready-message-color: rgb(0, 128, 192);;
+}
+
+body {
+	color:rgb(255, 255, 255);
+	background-color: black;
+}
+
+.main{
+	border: 1px solid red;
+	background-color: black;
+	width: 100rem;
+	position: relative;
+	top:0;
+	left:0;
+	padding: 0.5rem;
+	margin:auto;
+	overflow: scroll;
+	height: 48rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+@media (max-width: 1200px){
+	.main{
+		width: 65rem;
+		background-color: green;
+		height: 140rem;
+	}
+}
+
+.message-container{
+	background-color: transparent;
+	width: 100%;
+	min-height: 42rem;
+	max-height: 75%;
+	border: orange solid 1px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	overflow: scroll;
+	gap: 5px;
+	
+}
+.pfp{
+	top:0;
+	left:0;
+	position: absolute;
+	height: 1.5rem;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+}
+.username{
+	position: absolute;
+	top: 0.313rem;
+	left:1.875rem;
+}
+.username span{
+	color: rgb(211, 209, 201);
+	position: relative;
+	top: -0.4rem;
+	font-size: 0.8rem;
+}
+.message{
+	padding: 0.25rem;
+	position: relative;
+	height: fit-content;
+	border: 1px solid paleturquoise;
+}
+.message p{
+	color:rgb(255, 255, 255);
+	position: relative;
+	top:0.2rem;
+}
+
+
+
+
+.message-box{
+	background-color: rgb(67, 65, 54);
+	width: 92%;
+	min-height: 3rem;
+	max-height:15rem;
+	overflow: scroll;
+	border: 3px solid rgb(21, 20, 20);
+	border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.send-button{
+	background-color: var(--not-ready-message-color);
+	aspect-ratio: 1/1;
+	height:3.8rem;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.5rem;
+	cursor: pointer;
+	color: white;
+	-webkit-touch-callout: none; /* iOS Safari */
+	   -webkit-user-select: none; /* Safari */
+	    -khtml-user-select: none; /* Konqueror HTML */
+	      -moz-user-select: none; /* Old versions of Firefox */
+	       -ms-user-select: none; /* Internet Explorer/Edge */
+	           user-select: none; /* Non-prefixed version, currently
+	                                 supported by Chrome, Edge, Opera and Firefox */
+	
+}
+
+.text-field{
+	border:3px none olivedrab;
+	width: 95%;
+	position: relative;
+	outline: none;
+	min-height: 3.75rem;
+	overflow: unset;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+.text-placeholder{
+	color: var(--text-placeholder-color);
+	position: absolute;
+}
+
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	
+	<link href="/stylesheet.css" type="text/css" rel="stylesheet">
+	
+</head>
+
+<body>
+	
+	<div style="position: absolute; top: 0; right: 0; color: rgb(211, 209, 201);;"> Alpha v1.0.0</div>
+	<h1>Welcom to Scat!</h1>
+	<p>The best worst messaging service in the world</p>
+	<hr>
+	<div style="position: relative;">
+		 <img id="userpfp" class="pfp"></img>
+		 <span style="position: relative; left: 1.6rem;">
+			<input id="pfpselect" type="file" accept=".png"></input>
+			<button onclick="changepfp()">change profile picture</button>
+			logged in as
+			<input placeholder="username" id="username">select username</input>
+		</span>
+	</div>
+	
+	<div class="main">
+		<div class="message-container">
+			<!-- <div class="message">
+				<img src="/pfp/whynotjava.png" class="pfp">
+				<span class="username">Whynotjava <span>data m/d/y time</span> </span>
+				<p class="message-content">|my super duper message!||my super duper message!||my super duper message!||my super duper message!||my super duper message!||my super duper message!||my super duper message!||my super duper message!||my super duper message!||my super duper message!||my super duper message!||my super duper message!||my super duper message!||my super duper message!|</p>
+			</div> -->
+		
+		</div>
+		<div class="message-box">
+			<div contenteditable="true" class="text-field"><br></div>
+			<span style="font-size: 25px;" class="text-placeholder">type message here1</span>
+		</div>
+		<div class="send-button" onclick="sendMessage();">
+			&#x2709;
+		</div>
+	</div>
+	
+	
+	<script src="app.js"></script>
+</body>
+
+</html>
